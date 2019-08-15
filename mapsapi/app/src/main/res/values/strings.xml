@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Wunder</string>
+    <string name="cars_information_text">Cars Information</string>
+    <string name="cars_location_text">Cars Location</string>
+</resources>

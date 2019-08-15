@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/wunder_logo"
+            tools:ignore="ContentDescription"
+            android:layout_centerInParent="true"/>
+
+        <FrameLayout
+            android:layout_below="@id/logo"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                        <Button
+                            android:id="@+id/carsInformation"
+                            android:layout_width="150dp"
+                            android:layout_height="55dp"
+                            android:text="@string/cars_information_text"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:background="@drawable/utils_btn_rounded_transparent" />
+
+                        <Button
+                            android:layout_marginStart="20dp"
+                            android:id="@+id/carsLocation"
+                            android:layout_width="150dp"
+                            android:layout_height="55dp"
+                            android:text="@string/cars_location_text"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:background="@drawable/utils_btn_rounded_transparent"/>
+
+                </LinearLayout>
+
+        </FrameLayout>
+
+</RelativeLayout>
